@@ -87,6 +87,3 @@ module.exports = {
     minN: 2,                                        //the minimum number of anchors
     maxN: 2                                         //the maximum number of anchors
 }
-
-
-
