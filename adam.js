@@ -1,7 +1,7 @@
     const predef = require("./tools/predef")
     const { px, du, op } = require("./tools/graphics")
     
-    const MyLine2 = {
+    const AdamT = {
         //initializes the `state` parameter of the Drawing Tool.
         init() {
             return {/*any arbitrary state, this doesn't even have to be an object*/}
@@ -168,9 +168,9 @@
     }
     
     module.exports = {
-        name: 'MyLine2',                         //a unique identifier for the tool
-        description: 'My Line2',                //the UI displayed name of the tool
-        drawing: MyLine2,                                //the object that implements DrawingToolImplementation
+        name: 'AdamT',                         //a unique identifier for the tool
+        description: 'AdamT',                //the UI displayed name of the tool
+        drawing: AdamT,                                //the object that implements DrawingToolImplementation
     		params: {
     		noshow: predef.paramSpecs.color('black'),
             upper: predef.paramSpecs.color('yellow'),

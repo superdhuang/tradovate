@@ -1,6 +1,6 @@
 const predef = require("./tools/predef")
 
-const MyLine = {
+const MarkerTarget = {
     //initializes the `state` parameter of the Drawing Tool.
     init() {
         return {/*any arbitrary state, this doesn't even have to be an object*/}
@@ -79,7 +79,7 @@ const MyLine = {
 module.exports = {
     name: 'HMarker',                         //a unique identifier for the tool
     description: 'Mark target',                //the UI displayed name of the tool
-    drawing: MyLine,                                //the object that implements DrawingToolImplementation
+    drawing: MarkTarget,                                //the object that implements DrawingToolImplementation
     params: {                                       //like indicators, these are user defined parameters
         maxPeriod: predef.paramSpecs.period(14)
     },
